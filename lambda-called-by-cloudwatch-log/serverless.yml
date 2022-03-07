@@ -40,6 +40,7 @@ functions:
       - cloudwatchLog:
           logGroup: '/aws/lambda/slack-notify'
           filter: ERROR
+#      - cloudwatchLog: '/aws/lambda/slack-notify'
     environment:
       TZ: ${self:custom.TZ}
       SLACK_WEBHOOK_URL: ${self:custom.SLACK_WEBHOOK_URL}
