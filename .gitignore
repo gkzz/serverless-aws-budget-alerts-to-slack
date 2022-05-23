@@ -305,7 +305,6 @@ tags
 # esbuild directories
 .esbuild
 
-.tool-versions
 secret-env.json
 src.bk
 .nvmrc

@@ -7,7 +7,7 @@ frameworkVersion: '3'
 useDotenv: true
 custom:
   REGION: ${env:REGION}
-  nodejsVer: nodejs14.x
+  nodejsVer: nodejs16.x
   memorySize: 128
   timeout: 300
   TZ: Asia/Tokyo
@@ -32,9 +32,9 @@ plugins:
   - serverless-offline
 
 functions:
-  slack-notify:
-    handler: src/slack-notify.handler
-    name: slack-notify
+  slack_notify:
+    handler: src/slack_notify.handler
+    name: slack_notify
     events:
       - sns:
           arn: !Ref snsTopic
